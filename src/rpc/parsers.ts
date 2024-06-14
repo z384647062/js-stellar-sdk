@@ -145,7 +145,7 @@ function parseSuccessful(
       stateChanges: sim.stateChanges?.map((entryChange) => {
         return {
           type: entryChange.type,
-          key: xdr.LedgerKey.fromXDR(entryChange.key, 'base64'),
+          key: xdr.LedgerKey.fromXDR(entryChange.Key, 'base64'),
           before: entryChange.before ? xdr.LedgerEntry.fromXDR(entryChange.before, 'base64') : null,
           after: entryChange.after ? xdr.LedgerEntry.fromXDR(entryChange.after, 'base64') : null,
         };
