@@ -171,7 +171,7 @@ export namespace Api {
   interface RawLedgerEntryChange {
     type: number;
     /** This is LedgerKey in base64 */
-    Key: string;
+    key: string;
     /** This is xdr.LedgerEntry in base64 */
     before: string | null;
     /** This is xdr.LedgerEntry in base64 */
